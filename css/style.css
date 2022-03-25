@@ -1,0 +1,144 @@
+body {
+	background-image: url("../img/brick.jpg");
+}
+aside {
+	float:right;
+	width:150px;
+	height:500px;
+	background-color:tan;
+}
+a {
+	padding: 3px;
+}
+
+header {
+	font-size: 1.5em;
+	color: red;
+	/* box-shadow: inset 5px 5px 7px 0px rgba(50, 50, 50, 0.75); */
+	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+	text-shadow:  2px 2px 1px black, 3px 3px  3px blue;
+	/* 0.2em background: #c7b39b url(../img/fon.gif); */
+	background-image: url("../img/wood.jpg");
+	height:90px;
+
+}
+header h1 {
+	padding-top: 5px;
+	margin: 5px 0px 5px 0px;
+	
+
+}
+header h2 {
+	color: black;
+	font-size: 0.9em;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	text-shadow: none;
+
+}
+header img {
+
+	border-style: solid;
+	border-width: 2px;
+	border-color: white white gray gray;
+	position: absolute;
+	margin-top: -40px;
+	margin-left: 20px;
+	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+#logo  {
+	/* width: 2%; */
+	/* height: 3%; */
+	width: 0.2wm;
+	height: 0.3wm;
+	max-width: 40px;
+	max
+}
+main {
+		height:auto;
+
+	
+}
+section {
+	/* height: 280px; */
+	/* box-shadow: inset 10px 10px 7px 0px rgba(50, 50, 50, 0.75); */
+	box-shadow: 5px 2px 13px 11px rgba(34, 60, 80, 0.71) inset;
+	/* margin: 15px 50px 20px 45px; */
+	margin: 3vw 3vw 2vw 3vw;
+	padding-top: 3vh;/*10px*/
+	padding-left: 2vw;/*35px*/
+	padding-right:2vw;/*5px*/
+	padding-bottom: 3vh;/*3px*/
+	background-color:#c4c2c2;
+	background-image: url("../img/brick1.jpg");
+	/* background-color:grey; */
+	/* height:330px; */ /*возможно, вернуть и закоментировать последующее */
+	/* height: max-content; */
+	/* width: max-content; */
+	height: auto;
+	/* width: 92%; */
+	width: 88.0vw;
+	max-width: 1900px;
+}
+
+section a img {
+	width: 8%;
+	height: 8%;
+	/* width: 8vw; */
+	/* height: 15vh; */
+	
+	border-style: solid;
+	border-width: 5px;
+	border-color: #241970;
+	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);	
+}
+section a img:hover {
+	border-style: solid;
+	border-width: 5px;
+	border-color: red;
+	border-radius: 8px;	
+}
+
+div {
+	/* width: 600px; */
+	width: 50.0vw;
+	max-width: 600px;
+	height: 70px;
+	font-size: 1.3vw;
+	height: auto;
+	background-color:none;
+	background-image: url("../img/board.png")  ;
+	background-repeat:  no-repeat;
+	background-size: cover;
+	border-radius: 8px;
+	box-shadow:  10px 10px 5px 0px rgba(50, 50, 50, 0.75);
+	padding: 12px;
+	text-align: center;
+	margin: 5px auto;
+}
+div a {
+	color: white;
+	text-decoration: none;
+	border-color: white;
+	padding: 2px;
+	margin: 40px 10px 0px 10px;
+	text-shadow: 3px 2px 1px  #241970;
+}
+div a:hover {
+color: black;
+text-shadow: none;
+}
+
+
+
+footer {
+	/* height:60px; */
+	height:8.9vh;
+	max-height: 100px;
+	color:white;
+	background-color: black;
+	
+}
+
+
