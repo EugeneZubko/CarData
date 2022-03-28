@@ -63,7 +63,7 @@ header h2 {
 }
 span {
 	font-weight: bold;
-	font-size: 150%;
+	font-size: calc(2.2vw + 2px);
 
 }
    li {
@@ -80,7 +80,7 @@ span {
     border-color: blue; 
 	line-height: 2.2em;
 	/* font-size: 1.2em; */
-	font-size: calc(1.2vw + 2px);
+	font-size: calc(1.1vw + 2px);
 	margin: 0 15px;
 	padding: 3px 3px;
 	background-color:#191970;
@@ -105,14 +105,14 @@ a img {
 	height: 9%;
 }
 
-ul {
-	padding-inline-start: 10px;
-}
+/* ul { */
+	/* padding-inline-start: 10px; */
+/* } */
 aside {
 	text-align: left;
 	/* width: 18%; */
 	width: 18vw;
-	max-width: 300px;
+	max-width: 310px;
 	height: auto;
 	background-image: url("../img/board222.png");
 	background-repeat:  no-repeat;
@@ -125,7 +125,7 @@ aside {
 	padding-left: 0px;
 	padding-top: 0px;
 	/* margin-top: -95px; */
-	margin-top: -70px;
+	margin-top: -90px;
 	line-height: 2.5em;
 
 }
@@ -133,16 +133,19 @@ aside ul  {
 	margin-top: 20px;
     padding-inline-start: 10px;
 }
+aside li {
+	max-height: 70px;
+}
 
 
 aside a {
 	color: black;
 	font-weight: bold;
 	/* font-size: 1em; */
-	font-size: calc(1vw + 1px);
+	font-size: calc(1.2vw + 1px);
 	background-image:url("../img/paper.jpg");
 	background-color: #B0E0E6;
-	line-height: 2.4em;/*межстрочный интервал*/
+	line-height: 0.5em;/*межстрочный интервал 2.7em*/
 	border-color: white;
 	background-size: contain;
 	border-width: 2px;
@@ -152,7 +155,7 @@ aside a {
 aside a:hover {
 	color: white;
 	/* font-size: 1em; */
-	font-size: calc(1vw + 1px);
+	/* font-size: calc(1vw + 1px); */
 	border: none;
 	padding: 3px 3px;
 	background-image: none;
@@ -241,7 +244,7 @@ section {
 
 
 hr {
-	margin: 0px;
+	margin: 5px 0px;
 }
 #model {
 		box-shadow: 10px 10px 10px 0px rgba(139, 69, 19, 0.9);
