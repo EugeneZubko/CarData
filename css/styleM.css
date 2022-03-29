@@ -5,8 +5,8 @@ body {
 
 
 header {
-	width: 77.5%;
-	height:90px;
+	width: 75vw;
+	height:13vh;
 	color: red;
 	/* background: #c7b39b url(../img/fon.gif); */
 background-image: url("../img/wood.jpg");
@@ -19,8 +19,8 @@ header img {
 	border-style: solid;
     border-width: 2px;
     border-color: white white gray gray;
-	margin-top: -55px;
-	margin-left: 20px;
+	margin-top: -50px;
+	margin-left: -50px;
 	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 }
 header img:hover {
@@ -43,14 +43,14 @@ header a img {
 	height:3%;
 }
 h1 {
-
+	font-size: calc(1.7vw + 3px);
 	color:red;
 	text-align: center;
 	margin-top: -10px;
 }
 
 header h1 {
-	font-size: 2.5em;
+	font-size: calc(2.6vw + 4px);
 	color:red;
 	text-align: center;
 	margin: 10px 0px 0px 0px;
@@ -58,7 +58,8 @@ header h1 {
 	text-shadow:  3px 3px 2px black, 2px 2px 0.1em blue;
 }
 header h2 {
-	margin: -40px 0px;
+	font-size: calc(1.4vw + 3px);
+	margin: -35px 0px;
 	color: black;
 }
 span {
@@ -134,7 +135,7 @@ aside ul  {
     padding-inline-start: 10px;
 }
 aside li {
-	max-height: 70px;
+	/* max-height: 70px; */
 }
 
 
@@ -151,6 +152,7 @@ aside a {
 	border-width: 2px;
 	border-radius: 2px;
 	padding:2px 1px;
+	margin: 0vw 0.5vw;
 }
 aside a:hover {
 	color: white;
@@ -267,10 +269,12 @@ hr {
 }
  .buttons {
 	color: blue;
-	position: absolute;
+	position: relative;
+	
+	bottom: 7.5vh;
 	/* font-size: 100%; */
 	font-size: calc(1vw + 1px);
-	margin: -54px 0px 0px 45px;
+	/* margin: -54px 0px 0px 45px; */
 	padding-top: 0px;
 	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
  }
