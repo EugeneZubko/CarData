@@ -5,22 +5,28 @@ body {
 
 
 header {
-	width: 75vw;
-	height:13vh;
+	width: 35vw;/*75vw;*/
+	height:auto;
+	/* height:13vh; */
 	color: red;
 	/* background: #c7b39b url(../img/fon.gif); */
 background-image: url("../img/wood.jpg");
-margin: 0px 0px 0px 30px;
+margin: 0 0 10vw 22vw;
+margin-bottom: calc(5vw + 20px);
 box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 	/* box-shadow: inset 5px 5px 7px 0px rgba(50, 50, 50, 0.75); */
 }
 header img {
-	position: absolute;
+	/* position: absolute; */
+	position: relative;
+	bottom: calc(9vh + 1px);
+	right: calc(11vw + 2px);
+	
 	border-style: solid;
     border-width: 2px;
     border-color: white white gray gray;
-	margin-top: -50px;
-	margin-left: -50px;
+	/* margin-top: -70px; */
+	/* margin-left: -20px; */
 	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 }
 header img:hover {
@@ -39,8 +45,10 @@ header a {
 
 
 header a img {
-	width:2%;
-	height:3%;
+	/* width:5%; */
+	/* height:6%; */
+		width:calc(2vw + 4px);
+	height:3vh;
 }
 h1 {
 	font-size: calc(1.7vw + 3px);
@@ -53,7 +61,7 @@ header h1 {
 	font-size: calc(2.6vw + 4px);
 	color:red;
 	text-align: center;
-	margin: 10px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 	padding: 10px 10px 20px 10px;
 	text-shadow:  3px 3px 2px black, 2px 2px 0.1em blue;
 }
@@ -104,6 +112,7 @@ a img {
 
 	width: 9%;
 	height: 9%;
+
 }
 
 /* ul { */
@@ -126,17 +135,18 @@ aside {
 	padding-left: 0px;
 	padding-top: 0px;
 	/* margin-top: -95px; */
-	margin-top: -90px;
+	margin-top: -100px;
 	line-height: 2.5em;
 
 }
 aside ul  {
-	margin-top: 20px;
+	margin-top: 30px;
+	margin-bottom: 1px;
     padding-inline-start: 10px;
 }
 aside li {
 	/* max-height: 70px; */
-	margin: 1px 10px;
+	margin: 7px 10px 0px 10px;
 	
 }
 
@@ -167,7 +177,7 @@ aside a:hover {
 
 }
 section {
-	position: relative;
+	/* position: relative; */
 	width: 76%;
 	/* width: 1.0wv; */
 	max-width: 1900px;
@@ -273,9 +283,10 @@ hr {
 	color: blue;
 	position: relative;
 	
-	bottom: 7.5vh;
+	bottom: calc(3vh + 10px);
+	right: calc(17vw + 20px);
 	/* font-size: 100%; */
-	font-size: calc(1vw + 1px);
+	font-size: calc(1.3vw + 3px);
 	/* margin: -54px 0px 0px 45px; */
 	padding-top: 0px;
 	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
@@ -285,11 +296,15 @@ hr {
  }
  
   .buttonsas {
-	/* position: absolute; */
+	  display: block;
+	position: relative;
+	top: 1vh;
 	color: blue;
 	/* font-size: 100%; */
-	font-size: calc(1vw + 1px);
-	margin: 0px 0px 20px 14px;
+	font-size: calc(1.2vw + 3px);
+	/* margin: 0px 0px 20px 14px; */
+	margin: 3vh 0.2vw 0.6vh 3vw;
+	margin-left: calc(2.5vw + 3px);
 	padding-top: 0px;
 	padding-bottom: 0px;
 	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
@@ -300,6 +315,9 @@ hr {
  }
  .ins mark {
 	 background-color: #00BFFF;
+	font-size: calc(2.1vw + 2px);
  }
-
+span mark {
+	font-size: calc(1.8vw + 2px);
+}
 
