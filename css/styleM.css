@@ -19,8 +19,8 @@ box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 header img {
 	/* position: absolute; */
 	position: relative;
-	bottom: calc(9vh + 1px);
-	right: calc(11vw + 2px);
+	bottom: calc(9vh - 6px);/*calc(9vh + 1px) */
+	right: calc(11vw + 5px);
 	
 	border-style: solid;
     border-width: 2px;
@@ -67,7 +67,8 @@ header h1 {
 }
 header h2 {
 	font-size: calc(1.4vw + 3px);
-	margin: -35px 0px;
+	margin: -42px 0px 10px 0px;
+	padding-bottom: 10px;
 	color: black;
 }
 span {
@@ -284,8 +285,8 @@ hr {
 	color: blue;
 	position: relative;
 	
-	bottom: calc(3vh + 10px);
-	right: calc(17vw + 20px);
+	bottom: calc(3vh + 5px);
+	right: calc(17vw + 30px);
 	/* font-size: 100%; */
 	font-size: calc(1.3vw + 3px);
 	/* margin: -54px 0px 0px 45px; */
