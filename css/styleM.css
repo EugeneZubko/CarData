@@ -19,8 +19,8 @@ box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 header img {
 	/* position: absolute; */
 	position: relative;
-	bottom: calc(9vh - 6px);/*calc(9vh + 1px) */
-	right: calc(11vw + 5px);
+	bottom: calc(4vh - 6px);/*calc(9vh + 1px) */
+	right: calc(20vw + 1px);
 	
 	border-style: solid;
     border-width: 2px;
@@ -47,7 +47,7 @@ header a {
 header a img {
 	/* width:5%; */
 	/* height:6%; */
-		width:calc(2vw + 4px);
+	width:calc(2vw + 4px);
 	height:3vh;
 }
 h1 {
@@ -136,7 +136,7 @@ aside {
 	padding-left: 0px;
 	padding-top: 0px;
 	/* margin-top: -95px; */
-	margin-top: -100px;
+	margin-top: -105px;
 	line-height: 2.5em;
 
 }
