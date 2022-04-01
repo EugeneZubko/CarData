@@ -41,7 +41,7 @@ top: 0;
 left:0;
 transition: top 0.2s ease-in-out;
 width: 71vw;
-height: 12vh;
+height: calc(14vh - 20px);
 	color: red;
 	/* background: linear-gradient(to bottom, #ffffff 50%, #ffffff 50%, rgba(255, 255, 255, .0));/* сверху белая полоса на 50%, затем градиент к прозрач.*/
 	background-image: url("../img/concr.jpg");
@@ -92,10 +92,10 @@ h1 {
 
 
 header a h1 {
-	font-size: calc(3.8vw + 5px);/* 2.5em */
+	font-size: calc(3.1vw + 8px);/* 2.5em */
 	color:red;
 	text-align: center;
-	margin: -5px 0px 20px 0px;
+	margin: -5px 0px 10px 0px;
 	padding: 10px 10px 20px 10px;
 	padding-bottom:2vh;
 	text-shadow:  3px 3px 2px black, 2px 2px 0.1em blue;
@@ -106,7 +106,7 @@ header a h1 {
    
 header a h2 {
 	font-size: calc(1.4vw + 3px);
-	margin: -16px;
+	margin: -10px;
 	color: white;
 }
 span {
@@ -151,7 +151,7 @@ a img {
 
 aside {
 	text-align: center;
-	width: 21vw;
+	width: 22vw;
 	height:97.5vh;
 	background-image: url("../img/stena.jpg");
 	background-repeat: repeat-y;
@@ -194,7 +194,7 @@ aside li {
 aside a {
 	color: black;
 	font-weight: bold;
-	font-size: calc(1.3vw + 2px);
+	font-size: calc(1.3vw + 3px);
 	background-image:url("../img/paper.jpg");
 	background-color: #B0E0E6;
 	/* line-height: 3rem; */
@@ -255,8 +255,8 @@ aside a:hover {
 	border-style: dashed;
     border-width: 2px;
     border-color: transparent;
-    width: calc(2.5vw + 10px);
-    height: 7vh;
+    width: calc(2.5vw + 5px);
+    height: 5vh;
 	position: fixed;
     background:url(../img/up1.png) no-repeat;
 	opacity: 0.5;
@@ -283,8 +283,8 @@ aside a:hover {
 	border-style: dashed;
     border-width: 2px;
     border-color: transparent;
-    width: calc(2.5vw + 10px);
-    height: 7vh;
+    width: calc(2.5vw + 5px);
+    height: 5vh;
 	position: fixed;
     background:url(../img/up1.png) no-repeat;
 	opacity: 0.5;
