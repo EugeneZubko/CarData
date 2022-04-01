@@ -10,56 +10,29 @@
 		<link rel="stylesheet" type="text/css" href='../css/styleM.css' /><!-- нужно для работы с внешним css файлом -->
 	</head>
 	<body>
-	<header>
-	<h1 align="center"> Fiat </h1>
-		<!-- <img src="img/mylogo.png" width="50"/> -->
-		<a href = "../index.html"><img src="../img/mylogo.png"/></a>
-		<input class="buttons" type="button" onclick= "location.href = '../index.html'" value="главная"/>
-	<h2 align="center">страница выбора модели</h2>
-	<a id="up" href="#"><span> text </span></a>
-	<a id="up1" href="#"><span> text </span></a>
-	</header>
-		<!-- <nav> -->
-			<!-- <a href = "../index.html">Главная</a> || -->
-			<!-- <a href = "#">Ссылка 2</a> || -->
-			<!-- <a href = "#">Ссылка 3</a> || -->
-		<!-- </nav> -->
-				<aside>
-		<ul>
-					<li><input class="buttonsas" type="button" onclick= "location.href = '../index.html'" value="главная"/>
-			<input class="buttonsas" type="button" onclick= "location.href = '../schemes/schem.html'" value="доп.инфо"/></li>
-			
-			<li><a href = "../audi/audi.html">.....Audi.....</a>
-			<a href = "../bmw/bmw.html">....BMW...</a></li>
-			
-			<li><a href = "../citroen/citroen.html">..Citroen...</a>
-			<a href = "../fiat/fiat.html">...Fiat...</a></li>
-			
-			<li><a href = "../ford/ford.html">.....Ford.....</a>
-			<a href = "../honda/honda.html">...Honda..</a></li>
-			
-			<li><a href = "../hyundai/hyundai.html">..Hyundai.</a>
-			<a href = "../kia/kia.html">...Kia....</a></li>
-			
-			<li><a href = "../mazda/mazda.html">....Mazda...</a>
-			<a href = "../nissan/nissan.html">..Nissan..</a></li>
-			
-			<li><a href = "../mitsubishi/mitsubishi.html">Mitsubishi</a>
-			<a href = "../opel/opel.html">...Opel...</a></li>
-			
-			<li><a href = "../peugeot/peugeot.html">...Peugeot..</a>
-			<a href = "../renault/renault.html">.Renault.</a></li>
-			
-			<li><a href = "../seat/seat.html">......Seat......</a>
-			<a href = "../skoda/skoda.html">...Skoda..</a></li>
-			
-			<li><a href = "../toyota/toyota.html">...Toyota....</a>
-			<a href = "../vw/vw.html">....VW....</a></li>
-			
-			<li><a href = "../daewoo/daewoo.html">..Daewoo...</a></li>
-		
-		</ul>
-		
+		<header id = "head">
+			<a class = "back" href = "../index.html"><h1 align="center"> Fiat </h1></a>
+			<a href = "../index.html"><img src="../img/mylogo.png"/></a>
+			<a class = "back" href = "../index.html"><h2 align="center">нажми, чтобы вернуться на главную</h2></a>
+			<a id="up" href="#"><span> text </span></a>
+			<a id="up1" href="#"><span> text </span></a>
+		</header>
+
+		<aside id = "side">
+			<ul>
+				<li><a id = "diag" href = "../schemes/schem.html">Полезные схемы</a></li>
+				<li><span>внешние ссылки:</span></li>
+				<li><a href = "https://vsepredohraniteli.ru"  target="_blank">Предохранители.ru</a></li>
+				<li><a href = "../alfaromeo/alfaromeo.html">Внешний ресурс 2</a></li>
+				<li><a href = "../bmw/bmw.html">Внешний ресурс 3</a></li>		
+				<li><a href = "../citroen/citroen.html">Внешний ресурс 4</a></li>
+				<li><a href = "../fiat/fiat.html">Внешний ресурс 5</a></li>
+				<li><a href = "../ford/ford.html">Внешний ресурс 6</a></li>
+				<li><a href = "../honda/honda.html">Внешний ресурс 7</a></li>
+				<li><a href = "../hyundai/hyundai.html">Внешний ресурс 8</a></li>
+				<li><a href = "../kia/kia.html">Внешний ресурс 9</a></li>
+				<li><a href = "../lancia/lancia.html">Внешний ресурс 10</a></li>
+			</ul>
 		</aside>
 		
 			<section id="model">			
@@ -74,10 +47,10 @@
 
 
 
-		</section>
-		
-		<section id="uno">
-			<h1>UNO</h1>
+				</section>
+				<article id = "main">
+					<section id="uno">
+						<h1>UNO</h1>
 	
 	
 <hr><li><span>1.0\1.1</span><a href="img/156c1046.png" target="_blank"> MONO 156C1.046 / 156A2.246 </a>
@@ -86,10 +59,10 @@
 		<!-- <a href="img/ald2.png" target="_blank" onclick= 'window.open("img/ald1.png")'> ALD </a> -->
 <hr><li><span>TURBO</span><a href="img/146a8046.png" target="_blank"> 146A8.046 </a></li><hr>
 
-		</section>
+					</section>
 			
-		<section id="punto1">
-			<h1>PUNTO (-99)</h1>
+					<section id="punto1">
+						<h1>PUNTO (-99)</h1>
 			
 <hr><li><span>1.1</span><a href="doc/176a6.pdf" target="_blank"> 176A6 </a>
 		<a href="doc/176b2.pdf" target="_blank"> 176B2 </a>
@@ -101,10 +74,10 @@
 <hr><li><span>1.4</span><a href="doc/176a4.pdf" target="_blank"> 176A4 </a>
 		<a href="doc/176b6.pdf" target="_blank"> 176B6 </a>
 		<span>1.6</span><a href="doc/176a9.pdf" target="_blank"> 176A9 </a></li>
-		</section>
+				</section>
 		
-		<section id="punto2">
-			<h1>PUNTO (99-)</h1>
+				<section id="punto2">
+					<h1>PUNTO (99-)</h1>
 			
 <hr><li><span>1.2</span><a href="doc/188a400.pdf" target="_blank"> 188A4 (-00)</a>
 			<a href="doc/188a401.pdf" target="_blank"> 188A4 (00-)</a></li>
@@ -124,10 +97,10 @@
 		<a href="doc/188a704.pdf" target="_blank"> 188A7 (03-) </a>
 		<a href="img/188b2.png" target="_blank"> 188B2 </a></li><hr>
 
-		</section>
+				</section>
 		
-		<section id="palio">
-			<h1>PALIO</h1>
+				<section id="palio">
+					<h1>PALIO</h1>
 	
 	
 <hr><li><span>1.2</span><a href="img/178b5.png" target="_blank"> 178B5 </a>
@@ -135,10 +108,10 @@
 		<span>1.6</span><a href="img/178b399.png" target="_blank"> 178B3(99) </a>
 		<a href="img/178b301.png" target="_blank"> 178B3(99-01) </a></li><hr>
 
-		</section>
+				</section>
 		
 				<section id="tipo">
-			<h1>TIPO</h1>
+					<h1>TIPO</h1>
 	
 	
 <hr><li><span>1.4</span><a href="img/160a1046.png" target="_blank"> 160A1.046 </a>
@@ -149,11 +122,11 @@
 		<a href="img/159a6046.png" target="_blank">159A6.046 </a></li><hr>
 		
 
-		</section>
+				</section>
 
 		
 				<section id="bravo">
-			<h1>BRAVO \ BRAVA</h1>
+					<h1>BRAVO \ BRAVA</h1>
 			
 <hr><li><span>1.2</span><a href="doc/188a5.pdf" target="_blank"> 188A5 </a>
 		<span>1.4</span><a href="doc/182a3.pdf" target="_blank"> 182A3 </a>
@@ -162,20 +135,20 @@
 
 		<span>1.9 jtd</span><a href="doc/182b9.pdf" target="_blank"> 182B9 </a>
 						
-		</section>
+				</section>
 		
-		<section id="marea">
-			<h1>MAREA</h1>
+				<section id="marea">
+					<h1>MAREA</h1>
 			
 <hr><li><span>1.6</span><a href="img/182a4.png" target="_blank"> 182A4 </a>
 			<a href="doc/182b6.pdf" target="_blank"> 182B6 </a>
 		<span>1.9 jtd</span><a href="doc/182b9.pdf" target="_blank"> 182B9 </a>
 		<span>2.0</span><a href="img/182a1.png" target="_blank"> 182A1 </a></li>
 						
-		</section>
+				</section>
 		
-		<section id="stilo">
-			<h1>STILO</h1>
+				<section id="stilo">
+					<h1>STILO</h1>
 			
 <hr><li><span>1.2</span><a href="doc/188a5.pdf" target="_blank"> 188A5 </a>
 		<span>1.6</span><a href="doc/182b6.pdf" target="_blank"> 182B6 </a>
@@ -184,8 +157,8 @@
 				<a href="doc/192a3.pdf" target="_blank"> 192A3 </a></li>
 <hr><li><span>2.0</span><a href="img/182a1.png" target="_blank"> 182A1 </a>
 		<span>2.4</span><a href="doc/192a2.pdf" target="_blank"> 192A2 </a></li><hr>
-						
-		</section>
-			
+				</section>		
+				<span id = "end"> end</span>
+			</article>			
 		</body>
 	</html>

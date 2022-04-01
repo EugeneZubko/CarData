@@ -10,52 +10,29 @@
 		<link rel="stylesheet" type="text/css" href='../css/styleM.css'/> <!-- нужно для работы с внешним css файлом -->
 	</head>
 	<body>
-		<header>
-			<h1 align="center"> Volkswagen </h1>
-			<a id="tomain" href = "../index.html"><img src="../img/mylogo.png"/></a>
-			<input class="buttons" type="button" onclick= "location.href = '../index.html'" value="главная"/>
-			<h2 align="center">страница выбора модели</h2>
+		<header id = "head">
+			<a class = "back" href = "../index.html"><h1 align="center"> Volkswagen </h1></a>
+			<a href = "../index.html"><img src="../img/mylogo.png"/></a>
+			<a class = "back" href = "../index.html"><h2 align="center">нажми, чтобы вернуться на главную</h2></a>
 			<a id="up" href="#"><span> text </span></a>
 			<a id="up1" href="#"><span> text </span></a>
-				
 		</header>
 
-				<aside>
-		<ul>
-					<li><input class="buttonsas" type="button" onclick= "location.href = '../index.html'" value="главная"/>
-			<input class="buttonsas" type="button" onclick= "location.href = '../schemes/schem.html'" value="доп.инфо"/></li>
-			
-			<li><a href = "../audi/audi.html">.....Audi.....</a>
-			<a href = "../bmw/bmw.html">....BMW...</a></li>
-			
-			<li><a href = "../citroen/citroen.html">..Citroen...</a>
-			<a href = "../fiat/fiat.html">...Fiat...</a></li>
-			
-			<li><a href = "../ford/ford.html">.....Ford.....</a>
-			<a href = "../honda/honda.html">...Honda..</a></li>
-			
-			<li><a href = "../hyundai/hyundai.html">..Hyundai.</a>
-			<a href = "../kia/kia.html">...Kia....</a></li>
-			
-			<li><a href = "../mazda/mazda.html">....Mazda...</a>
-			<a href = "../nissan/nissan.html">..Nissan..</a></li>
-			
-			<li><a href = "../mitsubishi/mitsubishi.html">Mitsubishi</a>
-			<a href = "../opel/opel.html">...Opel...</a></li>
-			
-			<li><a href = "../peugeot/peugeot.html">...Peugeot..</a>
-			<a href = "../renault/renault.html">.Renault.</a></li>
-			
-			<li><a href = "../seat/seat.html">......Seat......</a>
-			<a href = "../skoda/skoda.html">...Skoda..</a></li>
-			
-			<li><a href = "../toyota/toyota.html">...Toyota....</a>
-			<a href = "../vw/vw.html">....VW....</a></li>
-			
-			<li><a href = "../daewoo/daewoo.html">..Daewoo...</a></li>
-		
-		</ul>
-		
+		<aside id = "side">
+			<ul>
+				<li><a id = "diag" href = "../schemes/schem.html">Полезные схемы</a></li>
+				<li><span>внешние ссылки:</span></li>
+				<li><a href = "https://vsepredohraniteli.ru"  target="_blank">Предохранители.ru</a></li>
+				<li><a href = "../alfaromeo/alfaromeo.html">Внешний ресурс 2</a></li>
+				<li><a href = "../bmw/bmw.html">Внешний ресурс 3</a></li>		
+				<li><a href = "../citroen/citroen.html">Внешний ресурс 4</a></li>
+				<li><a href = "../fiat/fiat.html">Внешний ресурс 5</a></li>
+				<li><a href = "../ford/ford.html">Внешний ресурс 6</a></li>
+				<li><a href = "../honda/honda.html">Внешний ресурс 7</a></li>
+				<li><a href = "../hyundai/hyundai.html">Внешний ресурс 8</a></li>
+				<li><a href = "../kia/kia.html">Внешний ресурс 9</a></li>
+				<li><a href = "../lancia/lancia.html">Внешний ресурс 10</a></li>
+			</ul>
 		</aside>
 		
 		<section id="model">
@@ -77,7 +54,7 @@
 			<!-- <a id="ign" href="img/cubik.jpg" target="_blank"> <mark>ignition unit (cube)</mark></a> -->
  			
 		</section>
-
+			<article id = "main">
 		<section id="passat1">
 			<h1>PASSAT -96</h1>
 <hr><li><span>1.6</span><a href="img/aft.PNG" target="_blank"> AFT\AKS </a>
@@ -259,7 +236,7 @@
 		<span>2.0</span><a href="img/ady.png" target="_blank" onclick= 'window.open("doc/F&Rsharan.pdf")'> ADY </a></li>
 <hr><li><span><mark> Fuses & Relays </span><a href="doc/F&Rsharan.pdf" target="_blank"> Sharan </a>
 		<span><mark> CoolTempSens </span><a href="img/coolant.jpg" target="_blank"> data table </a></li>
-		</section>
+
 		
 		
 		<!-- <section id="transporter"> -->
@@ -295,5 +272,8 @@
 <!-- <hr><li><span>1.6 fsi</span><a href="img/aft1.png" target="_blank" onclick= 'window.open("img/aft2.png")'> BAD-- </a></li> -->
 		
 		<!-- </section> -->
+				</section>		
+				<span id = "end"> end</span>
+			</article>			
 		</body>
 	</html>

@@ -1,32 +1,66 @@
 body {
 	background-image: url("../img/brick.jpg");
 	/* width: 95vw; */
+	display: grid;
+	grid-template-areas:
+	" header aside"
+	"section aside"
+	"article aside";
+	/* grid-template-rows: 17% 20% auto; */
+	grid-template-rows: 16vh 22vh auto;
+	grid-template-columns: 71vw  auto;
+	grid-gap: 5px;
+	height: 100vh;
+	margin-top: 0;
+}
+
+#head {
+	grid-area: header;
+}
+#model {
+	grid-area: section;
+}
+#main {
+	grid-area: article;
+}
+#side {
+	grid-area: aside;
+	/* max-height: 900px; */
+}
+
+header, section, article {
+  padding: 10px;
+  /* background: gold; */
+  background-image: url("../img/brick.jpg");
 }
 
 
 header {
-	width: 35vw;/*75vw;*/
-	height:auto;
-	/* height:13vh; */
+position: fixed;
+top: 0;
+left:0;
+transition: top 0.2s ease-in-out;
+width: 71vw;
+height: 12vh;
 	color: red;
-	/* background: #c7b39b url(../img/fon.gif); */
-background-image: url("../img/wood.jpg");
-margin: 0 0 10vw 22vw;
-margin-bottom: calc(5vw + 20px);
-box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-	/* box-shadow: inset 5px 5px 7px 0px rgba(50, 50, 50, 0.75); */
+	/* background: linear-gradient(to bottom, #ffffff 50%, #ffffff 50%, rgba(255, 255, 255, .0));/* сверху белая полоса на 50%, затем градиент к прозрач.*/
+	background-image: url("../img/concr.jpg");
+	margin: 0 0 0.1vh 0.1vw;
+	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+	padding: 0 0 0 0;
+
 }
 header img {
-	/* position: absolute; */
-	position: relative;
-	bottom: calc(4vh - 6px);/*calc(9vh + 1px) */
-	right: calc(20vw + 1px);
-	
+	position: fixed;
+	top:  60px; 
+	left: calc(8vw + 20px); 
+	z-index:99;
 	border-style: solid;
     border-width: 2px;
     border-color: white white gray gray;
-	/* margin-top: -70px; */
-	/* margin-left: -20px; */
+	margin-top: -55px;
+	/* margin-left: 20px; */
+	margin-left: -50px;
 	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 }
 header img:hover {
@@ -45,40 +79,41 @@ header a {
 
 
 header a img {
-	/* width:5%; */
-	/* height:6%; */
-	width:calc(2vw + 4px);
-	height:3vh;
+	width:2%;
+	height:3%;
 }
 h1 {
-	font-size: calc(1.7vw + 3px);
+	font-size: calc(1.5vw + 2px);
 	color:red;
 	text-align: center;
-	margin-top: -10px;
+	margin-top: 15vh;
 }
 
-header h1 {
-	font-size: calc(2.6vw + 4px);
+
+
+header a h1 {
+	font-size: calc(2.5vw + 2px);/* 2.5em */
 	color:red;
 	text-align: center;
-	margin: 0px 0px 0px 0px;
+	margin: -10px 0px 20px 0px;
 	padding: 10px 10px 20px 10px;
+	padding-bottom:2vh;
 	text-shadow:  3px 3px 2px black, 2px 2px 0.1em blue;
-}
-header h2 {
-	font-size: calc(1.4vw + 3px);
-	margin: -42px 0px 10px 0px;
-	padding-bottom: 10px;
-	color: black;
-}
-span {
-	font-weight: bold;
-	font-size: calc(2.1vw + 2px);
-
 }
    li {
     list-style-type: none; /* Убираем маркеры */
    }
+   
+header a h2 {
+	font-size: calc(1.4vw + 3px);
+	margin: -20px;
+	color: white;
+}
+span {
+	font-weight: bold;
+	font-size: calc(2vw + 2px);
+}
+
 
 
  a {
@@ -88,10 +123,11 @@ span {
 	border-style: solid;
     border-width: 3px;
     border-color: blue; 
-	line-height: 2.2em;
-	/* font-size: 1.2em; */
-	font-size: calc(1.3vw + 2px);
-	margin: 1px 15px;
+	/* line-height: 2.9em; */
+	line-height: 6vh;
+	font-size: calc(1.2vw + 2px);
+	/* margin: 10px 15px; */
+	margin: 1vh 1.8vw;
 	padding: 3px 3px;
 	background-color:#191970;
 	border-radius: 8px;
@@ -100,105 +136,117 @@ span {
 }
 a:hover {
 	/* font-size: 1.3em; */
-	border-width: 3px;
+	border-width: 2px;
 	background-color:red;
     border-color: #191970; 
 	border-radius: 8px;
-	/* font-weight: bold; */
 	cursor: pointer;
-		/* cursor: none; */
-
 }
 a img {
 
 	width: 9%;
 	height: 9%;
-
 }
 
-/* ul { */
-	/* padding-inline-start: 10px; */
-/* } */
+
 aside {
-	text-align: left;
-	/* width: 18%; */
-	width: 18vw;
-	max-width: 310px;
-	height: auto;
-	background-image: url("../img/board222.png");
-	background-repeat:  no-repeat;
-	background-size: cover;
-	box-shadow: 10px 10px 15px 0px rgba(50, 50, 50, 0.8);
+	text-align: center;
+	width: 21vw;
+	height:97.5vh;
+	background-image: url("../img/stena.jpg");
+	background-repeat: repeat-y;
+	background-size: contain;
+	/* box-shadow: 5px 2px 13px 11px rgba(34, 60, 80, 0.71) inset; */
+	box-shadow: -10px 10px 15px 0px rgba(159, 65, 45, 0.8);
 	position: fixed;
-	right: 50%;
+	top: 5px;
+	right: 1%;
 	margin-right: -49%;
+	border-style:solid;
+	border-color: brown;
+	border-width: 0 0 3px 3px;
 	border-radius: 8px;
-	padding-left: 0px;
+	padding-left: 10px;
 	padding-top: 0px;
-	/* margin-top: -95px; */
-	margin-top: -105px;
-	line-height: 2.5em;
+	margin: 0.1vw 0.1vw 4vw 0.1vw;
+	
 
 }
 aside ul  {
-	margin-top: 30px;
-	margin-bottom: 1px;
-    padding-inline-start: 10px;
+	margin-top: 20px;
+	margin-right:10px;
+    padding-inline-start: 1px;
 }
-aside li {
-	/* max-height: 70px; */
-	margin: 7px 10px 0px 10px;
-	
+aside ul span {
+	color: white;
 }
+
+   aside li {
+	    
+    list-style-type: none; /* Убираем маркеры */
+	margin: 5px 5px;
+   }
+   aside li a {
+	   /* display:inline-block; */
+		/* margin: 10px 5px;    */
+   }
 
 
 aside a {
 	color: black;
 	font-weight: bold;
-	/* font-size: 1em; */
-	font-size: calc(1.2vw + 1px);
+	font-size: calc(1.3vw + 2px);
 	background-image:url("../img/paper.jpg");
 	background-color: #B0E0E6;
-	line-height: 0.5em;/*межстрочный интервал 2.7em*/
+	/* line-height: 3rem; */
+	line-height: 7vh;
 	border-color: white;
 	background-size: contain;
-	border-width: 2px;
+	border-width: 2x;
 	border-radius: 2px;
-	padding:2px 1px;
-	margin: 0vw 0.5vw;
+	padding:2px 2px;
+	margin: 10px 0px; 
 }
 aside a:hover {
 	color: white;
-	/* font-size: 1em; */
-	/* font-size: calc(1vw + 1px); */
-	border: none;
-	padding: 3px 3px;
+	font-size: calc(1.3vw + 2px);
+	border-width: 3x;
+	/* border: none; */
+	padding: 4px 3px;
 	background-image: none;
 	background-color: red;
+	border-radius: 0px;
 
 }
-section {
-	/* position: relative; */
-	width: 76%;
-	/* width: 1.0wv; */
-	max-width: 1900px;
-	height: auto;
-	margin: 25px 50px 50px 30px;
-	margin: 2vw 5vw 5vw 2vw;
+#diag {
+	color: blue;
+}
+
+#main section {
+	/* margin: 1vw 1vw 4vw 1.5vw; */
+	margin: 1vh 0vw 4vh 0.7vw;
 	padding-top: 17px;
 	padding-left: 20px;
 	padding-bottom: 30px;
-	/* background: #c7b39b url(../img/fonn.gif); */
-		background: white url(../img/tkan.jpg);
-		
+	background: white url(../img/tkan.jpg);		
 	box-shadow: 10px 10px 10px 0px rgba(160, 82, 45, 0.8);
 	border-width: 1px;
 	border-radius: 8px;
+	/* height: calc(auto + 100px); */
+
+}
+#start {
+	display: block;
+	margin-top: 40vh;
+	color: red;
+	/* color: transparent; */
 }
 
-
-
-
+#end {
+	display: block;
+	margin-top: 40vh;
+	color: transparent;
+}
 
 #up {
 	color: transparent;
@@ -257,18 +305,19 @@ section {
 }
 
 
-
 hr {
-	margin: 5px 0px;
-	height: 4px;
+	margin: 3px 0px;
+	height: 2px;
 }
 #model {
 		box-shadow: 10px 10px 10px 0px rgba(139, 69, 19, 0.9);
 		background: white url(../img/kozha.jpg);
-		/* background-size: cover; */
+		margin: 0.5vw 1vw 1vw 1.5vw;
+		border-width: 1px;
+		border-radius: 8px;
+		height: auto;
  } 
 #model a {
-	/* font-size: 1.5em;/*величина ссылок в выборе марки*/
 	font-size: calc(1.5vw + 1px);
 	background-color: #006400;/*dark-green*/
 }
@@ -283,12 +332,11 @@ hr {
 }
  .buttons {
 	color: blue;
-	position: relative;
-	
-	bottom: calc(3vh + 5px);
-	right: calc(17vw + 30px);
-	/* font-size: 100%; */
-	font-size: calc(1.3vw + 3px);
+	position: fixed;
+	top:30px;
+	margin-left: 1vw;
+	/* font-size: 220%; */
+	font-size: calc(1.3vw + 2px);
 	/* margin: -54px 0px 0px 45px; */
 	padding-top: 0px;
 	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
@@ -298,15 +346,11 @@ hr {
  }
  
   .buttonsas {
-	  display: block;
-	position: relative;
-	top: 1vh;
+	/* position: absolute; */
 	color: blue;
 	/* font-size: 100%; */
-	font-size: calc(1.2vw + 3px);
-	/* margin: 0px 0px 20px 14px; */
-	margin: 3vh 0.2vw 0.6vh 3vw;
-	margin-left: calc(2.5vw + 3px);
+	font-size: calc(1vw + 1px);
+	margin: 0px 0px 20px 14px;
 	padding-top: 0px;
 	padding-bottom: 0px;
 	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
@@ -317,9 +361,8 @@ hr {
  }
  .ins mark {
 	 background-color: #00BFFF;
-	font-size: calc(2.1vw + 2px);
  }
-span mark {
-	font-size: calc(1.8vw + 2px);
-}
 
+ span mark {
+	 font-size: calc(1.5vw + 2px); 
+ }
