@@ -79,8 +79,8 @@ header a {
 
 
 header a img {
-	width:2%;
-	height:3%;
+	width:calc(1.5vw + 10px);
+	height:calc(4vh - 5px);
 }
 h1 {
 	font-size: calc(1.5vw + 2px);
@@ -92,10 +92,10 @@ h1 {
 
 
 header a h1 {
-	font-size: calc(2.5vw + 2px);/* 2.5em */
+	font-size: calc(3.8vw + 5px);/* 2.5em */
 	color:red;
 	text-align: center;
-	margin: -10px 0px 20px 0px;
+	margin: -5px 0px 20px 0px;
 	padding: 10px 10px 20px 10px;
 	padding-bottom:2vh;
 	text-shadow:  3px 3px 2px black, 2px 2px 0.1em blue;
@@ -106,7 +106,7 @@ header a h1 {
    
 header a h2 {
 	font-size: calc(1.4vw + 3px);
-	margin: -20px;
+	margin: -16px;
 	color: white;
 }
 span {
@@ -250,17 +250,17 @@ aside a:hover {
 #up {
 	color: transparent;
 	display: block;
-	bottom: 5px;
-	right: 100px;
+	bottom: 10vh;
+	right: 23vw;
 	border-style: dashed;
     border-width: 2px;
     border-color: transparent;
-    width: 35px;
-    height: 35px;
+    width: calc(2.5vw + 10px);
+    height: 7vh;
 	position: fixed;
     background:url(../img/up1.png) no-repeat;
 	opacity: 0.5;
-	background-size: cover;
+	background-size: contain;
 	z-index: 5;
 }
 
@@ -278,17 +278,17 @@ aside a:hover {
 #up1 {
 	color: transparent;
 	display: block;
-	bottom: 70%;
-	right: 95.5%;
+	bottom: 70vh;
+	right: calc(95vw - 30px);
 	border-style: dashed;
     border-width: 2px;
     border-color: transparent;
-    width: 35px;
-    height: 35px;
+    width: calc(2.5vw + 10px);
+    height: 7vh;
 	position: fixed;
     background:url(../img/up1.png) no-repeat;
 	opacity: 0.5;
-	background-size: cover;
+	background-size: contain;
 	z-index: 5;
 }
 
@@ -317,7 +317,7 @@ hr {
 		height: auto;
  } 
 #model a {
-	font-size: calc(1.5vw + 1px);
+	font-size: calc(1.5vw + 2px);
 	background-color: #006400;/*dark-green*/
 }
 #model a:hover  {
