@@ -3,7 +3,7 @@ body {
 	/* width: 95vw; */
 	display: grid;
 	grid-template-areas:
-	" header aside"
+	"header aside"
 	"section aside"
 	"article aside";
 	/* grid-template-rows: 17% 20% auto; */
@@ -181,14 +181,13 @@ aside ul span {
 	color: white;
 }
 
-   aside li {
+aside li {
 	    
     list-style-type: none; /* Убираем маркеры */
 	margin: 5px 5px;
    }
-   aside li a {
-	   /* display:inline-block; */
-		/* margin: 10px 5px;    */
+ aside li span {
+	font-size: 2vw;
    }
 
 
