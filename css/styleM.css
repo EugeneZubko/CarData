@@ -6,8 +6,8 @@ body {
 	"header aside"
 	"section aside"
 	"article aside";
-	/* grid-template-rows: 17% 20% auto; */
-	grid-template-rows: 16vh 22vh auto;
+	/* grid-template-rows: min-content 22vh auto; */
+		grid-template-rows: 16vh min-content auto;
 	grid-template-columns: 71vw  auto;
 	grid-gap: 5px;
 	height: 100vh;
@@ -83,7 +83,7 @@ header a img {
 	height:calc(4vh - 5px);
 }
 h1 {
-	font-size: calc(1.5vw + 2px);
+	font-size: calc(1.4vw + 5px);
 	color:red;
 	text-align: center;
 	margin-top: 15vh;
