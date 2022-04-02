@@ -5,9 +5,9 @@ body {
 	background-image: url("../img/brick.jpg");
 	min-height: 98%;/* new */
 	display:grid;/* new */
-	grid-template-rows: 15vh auto auto 17vh;
-	/* align-items: end; */
-
+	grid-template-rows: 10% auto auto auto;
+	align-items: end;
+	/* align-items: stretch; */
 }
 
 a {
@@ -16,6 +16,7 @@ a {
 
 header {
 	width: 96vw;
+	max-height:200px;
 	font-size: calc(1.5vw + 3px);
 	color: red;
 	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
@@ -47,7 +48,7 @@ header img {
 	border-width: 2px;
 	border-color: white white gray gray;
 	position: absolute;
-	margin-top: -40px;
+	margin-top: -35px;
 	margin-left: 20px;
 	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 }
@@ -78,12 +79,12 @@ section {
 }
 
 section a img {
-	/* width: 8%; */
-	/* height: 8%; */
-	min-width: 65px;
-	min-height: 65px;
-	width: 8vw;
-	height: 10vh;
+	width: 8%;
+	height: 8%;
+	min-width: 60px;
+	min-height: 60px;
+	/* width: 8vw; */
+	/* height: 10vh; */
 	
 	border-style: solid;
 	border-width: 5px;
