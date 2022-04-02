@@ -146,10 +146,11 @@ footer {
 	margin-top: 2vh;	
 }
 footer a {
+	display:inline-block;
 	text-decoration: none;
 	color: black;
 	font-weight: bold;
-	font-size: calc(1.3vw + 2px);
+	font-size: calc(1.3vw + 3px);
 	background-image:url("../img/paper.jpg");
 	background-color: #B0E0E6;
 	/* line-height: 3rem; */
@@ -159,7 +160,7 @@ footer a {
 	border-width: 2x;
 	border-radius: 2px;
 	padding:2px 2px;
-	margin: 5px 5px; 
+	margin: 0.5vh 3vw; 
 }
 footer li {
 	    
