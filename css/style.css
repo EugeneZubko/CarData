@@ -138,8 +138,8 @@ div h2 {
 
 footer {
 	/* height:60px; */
-	height:9vh;
-	max-height: 220px;
+	/* height:9vh; */
+	/* max-height: 220px; */
 	color:white;
 	background-color: black;
 	/* margin-top:110px; */
@@ -150,7 +150,7 @@ footer a {
 	text-decoration: none;
 	color: black;
 	font-weight: bold;
-	font-size: calc(1.3vw + 3px);
+	font-size: calc(1.3vw + 2px);
 	background-image:url("../img/paper.jpg");
 	background-color: #B0E0E6;
 	/* line-height: 3rem; */
@@ -166,5 +166,8 @@ footer li {
 	    
     list-style-type: none; /* Убираем маркеры */
 	margin: 5px 5px;
+   }
+   h4 {
+	   font-size: calc(1.5vw + 2px);
    }
 
