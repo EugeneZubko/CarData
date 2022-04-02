@@ -5,8 +5,8 @@ body {
 	background-image: url("../img/brick.jpg");
 	min-height: 98%;/* new */
 	display:grid;/* new */
-	grid-template-rows: 16vh auto auto auto;
-	align-items: end;
+	grid-template-rows: 15vh auto auto 17vh;
+	/* align-items: end; */
 
 }
 
@@ -15,13 +15,14 @@ a {
 }
 
 header {
-	/* font-size: 1.5em; */
+	width: 96vw;
 	font-size: calc(1.5vw + 3px);
 	color: red;
 	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 	text-shadow:  2px 2px 1px black, 3px 3px  3px blue;
-	/* 0.2em background: #c7b39b url(../img/fon.gif); */
-	background-image: url("../img/wood.jpg");
+	margin-top: 1px;
+	background-image: url("../img/concr.jpg");
+	/* padding-top:50px; */
 	/* height:13vh; */
 
 }
@@ -64,11 +65,11 @@ header img {
 section {
 
 	box-shadow: 5px 2px 13px 11px rgba(34, 60, 80, 0.71) inset;
-	margin: 1vw 3vw 2vw 3vw;
+	margin: 1vw 3vw 1vw 3vw;
 	padding-top: 3vh;/*10px*/
 	padding-left: 2vw;/*35px*/
 	padding-right:2vw;/*5px*/
-	padding-bottom: 3vh;/*3px*/
+	padding-bottom: 1vh;/*3px*/
 	background-color:#c4c2c2;
 	background-image: url("../img/brick1.jpg");
 	height: auto;
@@ -77,10 +78,12 @@ section {
 }
 
 section a img {
-	width: 8%;
-	height: 8%;
-	/* width: 8vw; */
-	/* height: 15vh; */
+	/* width: 8%; */
+	/* height: 8%; */
+	min-width: 65px;
+	min-height: 65px;
+	width: 8vw;
+	height: 10vh;
 	
 	border-style: solid;
 	border-width: 5px;
@@ -96,11 +99,12 @@ section a img:hover {
 
 div {
 	/* width: 600px; */
-	width: 50.0vw;
+	width: 40vw;
 	max-width: 600px;
 	height: 70px;
 	font-size: 1.3vw;
 	height: auto;
+	max-height:150px;
 	background-color:none;
 	background-image: url("../img/board.png")  ;
 	background-repeat:  no-repeat;
@@ -124,17 +128,40 @@ div a:hover {
 color: black;
 text-shadow: none;
 }
+div h2 {
+	margin: 5px 10px;
+}
 
 
 
 footer {
 	/* height:60px; */
 	height:9vh;
-	max-height: 120px;
+	max-height: 220px;
 	color:white;
 	background-color: black;
 	/* margin-top:110px; */
 	margin-top: 2vh;	
 }
-
+footer a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: calc(1.3vw + 2px);
+	background-image:url("../img/paper.jpg");
+	background-color: #B0E0E6;
+	/* line-height: 3rem; */
+	line-height: 5vh;
+	border-color: white;
+	background-size: contain;
+	border-width: 2x;
+	border-radius: 2px;
+	padding:2px 2px;
+	margin: 5px 5px; 
+}
+footer li {
+	    
+    list-style-type: none; /* Убираем маркеры */
+	margin: 5px 5px;
+   }
 

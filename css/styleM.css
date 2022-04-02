@@ -37,7 +37,7 @@ header, section, article {
 
 header {
 position: fixed;
-top: 0;
+top: 3px;
 left:0;
 transition: top 0.2s ease-in-out;
 width: 71vw;
@@ -52,7 +52,7 @@ height: calc(14vh - 20px);
 }
 header img {
 	position: fixed;
-	top:  60px; 
+	top:  70px; 
 	left: calc(8vw + 20px); 
 	z-index:99;
 	border-style: solid;
