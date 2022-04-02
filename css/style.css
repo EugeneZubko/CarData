@@ -5,7 +5,8 @@ body {
 	background-image: url("../img/brick.jpg");
 	min-height: 98%;/* new */
 	display:grid;/* new */
-	grid-template-rows: 10% auto auto auto;
+	/* grid-template-rows: 10% auto auto auto; */
+	grid-template-rows: min-content auto auto min-content;
 	align-items: end;
 	/* align-items: stretch; */
 }
@@ -16,7 +17,7 @@ a {
 
 header {
 	width: 96vw;
-	max-height:200px;
+	/* max-height:200px; */
 	font-size: calc(1.5vw + 3px);
 	color: red;
 	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
