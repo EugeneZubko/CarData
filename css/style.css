@@ -24,6 +24,9 @@ header {
 	text-shadow:  2px 2px 1px black, 3px 3px  3px blue;
 	margin-top: 1px;
 	background-image: url("../img/concr.jpg");
+			border-style: solid;
+    border-width: 2px;
+    border-color: white black black white;
 	/* padding-top:50px; */
 	/* height:13vh; */
 
@@ -77,6 +80,9 @@ section {
 	height: auto;
 	width: 88.0vw;
 	max-width: 1900px;
+			border-style: solid;
+    border-width: 2px;
+    border-color: black white black black;
 }
 
 section a img {
@@ -116,6 +122,9 @@ div {
 	padding: 12px;
 	text-align: center;
 	margin: 5px auto;
+			border-style: solid;
+    border-width: 2px;
+    border-color: white brown brown transparent;
 		
 }
 div a {
