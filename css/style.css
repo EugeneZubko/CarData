@@ -19,23 +19,19 @@ header {
 	width: 96vw;
 	/* max-height:200px; */
 	font-size: calc(1.5vw + 3px);
-	color: red;
 	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-	text-shadow:  2px 2px 1px black, 3px 3px  3px blue;
 	margin-top: 1px;
 	background-image: url("../img/concr.jpg");
 			border-style: solid;
     border-width: 2px;
     border-color: white black black white;
-	/* padding-top:50px; */
-	/* height:13vh; */
 
 }
 header h1 {
-	/* font-size: 3vw; */
+	color: red;
 	padding-top: 4px;
 	margin: 2px 0px 4px 0px;
-	
+	text-shadow:  2px 2px 1px black, 3px 3px  3px blue;	
 
 }
 header h2 {
@@ -45,6 +41,10 @@ header h2 {
 	margin-top: 0px;
 	text-shadow: none;
 
+}
+
+header h4 {
+	margin: 5px;
 }
 header img {
 
