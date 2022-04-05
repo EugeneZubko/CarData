@@ -79,14 +79,19 @@ header a {
 	background-color:#191970;
 	border: none;	
 }
-
-
 header a img {
-	width:calc(1.5vw + 10px);
-	height:calc(4vh - 5px);
+	width: 2%;
+	height: 3%;
+	max-width: 40px;
 	min-width: 20px;
-	min-height: 20px;
 }
+
+/* header a img { */
+	/* width:calc(1.5vw + 10px); */
+	/* height:calc(4vh - 5px); */
+	/* min-width: 20px; */
+	/* min-height: 20px; */
+/* } */
 h1 {
 	font-size: calc(1.4vw + 5px);
 	color:red;
