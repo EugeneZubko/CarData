@@ -176,5 +176,6 @@ footer li {
    }
    h4 {
 	   font-size: calc(1.5vw + 2px);
+	   margin:15px;
    }
 

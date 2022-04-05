@@ -79,6 +79,7 @@ header a {
 	background-color:#191970;
 	border: none;	
 }
+
 header a img {
 	width: 2%;
 	height: 3%;
@@ -93,7 +94,7 @@ header a img {
 	/* min-height: 20px; */
 /* } */
 h1 {
-	font-size: calc(1.4vw + 5px);
+	font-size: calc(1.5vw + 5px);
 	color:red;
 	text-align: center;
 	margin-top: 15vh;
@@ -244,18 +245,18 @@ aside a:hover {
 	/* height: calc(auto + 100px); */
 
 }
-#start {
-	display: block;
-	margin-top: 40vh;
-	color: red;
+/* #start { */
+	/* display: block; */
+	/* margin-top: 40vh; */
+	/* color: red; */
 	/* color: transparent; */
-}
+/* } */
 
-#end {
-	display: block;
-	margin-top: 40vh;
-	color: transparent;
-}
+/* #end { */
+	/* display: block; */
+	/* margin-top: 40vh; */
+	/* color: transparent; */
+/* } */
 
 #up {
 	color: transparent;
