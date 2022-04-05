@@ -252,11 +252,11 @@ aside a:hover {
 	/* color: transparent; */
 /* } */
 
-/* #end { */
-	/* display: block; */
-	/* margin-top: 40vh; */
-	/* color: transparent; */
-/* } */
+#end {
+	display: block;
+	margin-top: 40vh;
+	color: transparent;
+}
 
 #up {
 	color: transparent;

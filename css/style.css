@@ -45,6 +45,7 @@ header h2 {
 
 header h4 {
 	margin: 5px;
+	color: brown;
 }
 header img {
 
@@ -177,5 +178,6 @@ footer li {
    h4 {
 	   font-size: calc(1.5vw + 2px);
 	   margin:15px;
+	   /* color: black; */
    }
 
