@@ -71,7 +71,7 @@ header img:hover {
 }
 header a {
 	text-decoration: none;
-	color: white;
+	/* color: white; */
 	line-height: 0.2em;
 	font-size: 0px;
 	margin: 0 15px;
@@ -110,7 +110,7 @@ header a h1 {
 header a h2 {
 	font-size: calc(1.4vw + 3px);
 	margin: -10px;
-	color: white;
+	color: black;
 }
 span {
 	font-weight: bold;
