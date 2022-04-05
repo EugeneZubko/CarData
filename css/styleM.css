@@ -84,6 +84,8 @@ header a {
 header a img {
 	width:calc(1.5vw + 10px);
 	height:calc(4vh - 5px);
+	min-width: 20px;
+	min-height: 20px;
 }
 h1 {
 	font-size: calc(1.4vw + 5px);
@@ -366,5 +368,5 @@ hr {
  }
 
  span mark {
-	 font-size: calc(1.5vw + 2px); 
+	 font-size: calc(1.4vw + 2px); 
  }
