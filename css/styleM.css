@@ -377,9 +377,10 @@ hr {
  }
  
   #select {
+	 font-size: calc(1.5vw + 2px);
 	 color:red;
 	 border-color:blue;
-	 padding:6px;
+	 padding:8px;
  }
  #select:hover {
 	 color:white;
