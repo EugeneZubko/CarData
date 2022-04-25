@@ -2,7 +2,7 @@
  
  main {
 	 width: 80vw;
-	 margin-top: -30px;
+	 margin-top:-30px;
  }
  
  aside {
@@ -104,10 +104,10 @@ text-align: center
 	  overflow-y: auto;	
       border: solid 2px #ccc;
 	  /* width: auto; */
-	  width: 70vw; /* 50vw */
+	  width: 75vw;
 	  max-width: 970px;	  
       height: auto;/*65%;*/
-	  max-height: 850px;
+	  max-height: 650px;
       margin: 10px 0px 2px 20px;
 	  box-shadow: 15px 15px 10px 1px rgba(0, 73, 112, 0.7);
     }

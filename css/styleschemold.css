@@ -1,0 +1,150 @@
+
+ aside {
+	/* для того, чтобы блок скролился, нужно, чтобы размеры блока были заданы явно	 */
+	overflow-y: auto;
+	float:right;
+	width:16%;/*was 13.3%*/
+	max-width:175px;/*was 165px*/
+	height:auto; /*was800px;*/
+	max-height: 1000px;
+	background: #c7b39b url(img/fon.gif);
+	background-color:tan;
+	text-align: center;
+}
+aside a {
+font-size: 150%;
+line-height: 1.3em;
+margin-left: -1px;
+text-decoration: none;
+}
+li {
+	margin: 0px 0px 0px -40px;
+	padding: 10px 10px 10px 0px;
+	list-style: none;/* убираем точки */
+}
+li a {
+	/* padding: 10px 10px 10px 0px; */
+}
+
+a {
+	padding: 3px;
+	margin-left: 1px;
+}
+/* li a img { */
+	/* width: 100px; */
+	/* height: 100px; */
+	/* width: 12%; */
+	/* height: 3%; */
+/* margin-left: 0px; */
+	
+/* } */
+header {
+	font-size: 2.2em;
+	color: red;
+	background: #c7b39b url(img/fon.gif);
+	height:auto;
+	/* height:30px; */
+	padding: 2px;
+}
+header img {
+	width: 3%;
+	height: 4%;
+	border-style: solid;
+	border-width: 3px;
+	border-color: white white gray gray;
+	position: absolute;
+	margin-top: -10px;
+	margin-left: -70px;
+	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+header a {
+margin: -100px 0px 0px 75px;
+/* margin-left: 75px; */
+padding-top: 0px;
+}
+
+    body {
+      margin: 20px auto;
+      padding: 0;
+      width: 99%;
+      font: 75%/120% Arial, Helvetica, sans-serif;
+	  background: #c7b39b url(img/fon.gif);
+	  background-color:tan;
+    }
+
+    h2 {
+      font: bold 190%/100% Arial, Helvetica, sans-serif;
+      margin: -15px 0px 0px 350px;
+	  /* margin: 0 0 .2em; */
+    }
+
+    h2 em {
+      font: bold 80%/100% Arial, Helvetica, sans-serif;
+      color: red; /* #999999- 'это серый */
+    }
+
+    #largeImg {
+	  overflow-y: auto;	
+      border: solid 2px #ccc;
+	  width: 83%; 
+      height: auto;
+	  /* height: 570px; */
+      padding: 2px;
+	  box-shadow: 5px 5px 10px 1px rgba(0, 73, 112, 0.7);
+    }
+
+    .thumbs img {
+      border: solid 4px #ccc;
+      width: 120px;/*125px;*/
+      height: 100px;/*100px;*/
+      padding: 2px 0px;
+	  margin-left: 0px;
+	  box-shadow: 5px 5px 10px 1px rgba(0, 73, 112, 0.7);
+    }
+	.thumbs img:hover {
+      border-color: #FF9900;
+	  border-radius: 10px;
+	  width: 125px;/*100px;*/
+      height: 105px;/*100px;*/
+	  padding: 0px;
+    }
+	
+	   li a img{
+      border: solid 2px #ccc;
+      /* width: 70px; */
+      /* height: 80px; */
+      padding: 4px 4px 4px 0px;
+    }
+
+
+	
+	#toTop {
+	color: transparent;
+	display: block;
+	/* bottom: 70%; */
+	/* right: 95.5%; */
+	bottom: 10%;
+	right: 165px;
+	border-style: dashed;
+    border-width: 2px;
+    border-color: transparent;
+    width: 35px;
+    height: 35px;
+	position: fixed;
+    background:url(img/up1.png) no-repeat;
+	opacity: 0.5;
+	background-size: cover;
+	z-index: 5;
+}
+
+#toTop span {
+	display: block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+#toTop:hover {
+	border: none;
+}

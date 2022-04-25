@@ -3,75 +3,72 @@ body {
 	/* width: 95vw; */
 	display: grid;
 	grid-template-areas:
-	"header aside"
-	"section aside"
-	"article aside";
-	/* grid-template-rows: min-content 22vh auto; */
-		grid-template-rows: 16vh min-content auto;
-	grid-template-columns: 71vw  auto;
+	" header ads aside"
+	"main ads aside";
+	grid-template-rows: 11vh auto;
+	grid-template-columns: 60vw auto  19vw;
 	grid-gap: 5px;
 	height: 100vh;
 	margin-top: 0;
+	/* padding-top: 50px; */
 }
-
 #head {
 	grid-area: header;
 }
-#model {
-	grid-area: section;
-}
 #main {
-	grid-area: article;
+	grid-area: main;
 }
 #side {
 	grid-area: aside;
-	/* max-height: 900px; */
+}
+#ads {
+	grid-area: ads;
 }
 
+
 header, section, article {
-  padding: 10px;
+  padding: 5px;
+  /* background: gold; */
   background-image: url("../img/brick.jpg");
 }
 
-
 header {
-/* position: fixed; */
-/* top: 3px; */
-/* left:0; */
-/* transition: top 0.2s ease-in-out; */
-width: 71vw;
-height:min-content;
-/* height: calc(14vh - 20px); */
+	/* width: 88%; */
+	position:relative;
+	top:0;
+	left:0;
+	max-height:100px;
 	color: red;
-	/* background: linear-gradient(to bottom, #ffffff 50%, #ffffff 50%, rgba(255, 255, 255, .0));/* сверху белая полоса на 50%, затем градиент к прозрач.*/
 	background-image: url("../img/concr.jpg");
-	margin: 0 0 0.1vh 0.1vw;
-	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-	padding: 0 0 0 0;
-		border-style: solid;
-    border-width: 2px;
-    border-color: white black black white;
-
-}
-header img {
-	/* position: fixed; */
-	/* top:  70px;  */
-	/* left: calc(8vw + 20px);  */
-	/* z-index:99; */
+	margin: 5px 0 0 0;
 	border-style: solid;
     border-width: 2px;
-    border-color: white white gray gray;
-	margin-top: 0px;
-	margin-left: 20px;
-	/* margin-left: -50px; */
-	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+	border-color: white black black white;
+	box-shadow:  2px 2px 2px black, 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+	padding:0 ;
 }
-header img:hover {
-	background-color: #f794947b;
+
+header p {
+	margin:0;
 }
+/* header img { */
+		/* width:2%; */
+		/* max-width: 40px; */
+	/* min-width: 20px; */
+	/* position: relative; */
+	/* left:0; */
+	/* bottom:4vh; */
+	/* border-style: solid; */
+    /* border-width: 2px; */
+    /* border-color: white white gray gray; */
+	/* box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75); */
+/* } */
+/* header img:hover { */
+	/* background-color: #f794947b; */
+/* } */
 header a {
 	text-decoration: none;
-	/* color: white; */
+	color: white;
 	line-height: 0.2em;
 	font-size: 0px;
 	margin: 0 15px;
@@ -80,80 +77,264 @@ header a {
 	border: none;	
 }
 
-header a img {
-	/* width: 2%; */
-	/* height: 3%; */
-	/* max-width: 40px; */
-	/* min-width: 20px; */
-		width:calc(1.5vw + 10px);
-	height:calc(4vh - 5px);
-}
 
-/* header a img { */
-	/* width:calc(1.5vw + 10px); */
-	/* height:calc(4vh - 5px); */
-	/* min-width: 20px; */
-	/* min-height: 20px; */
-/* } */
 h1 {
-	font-size: calc(1.5vw + 5px);
+
+	font-size:2.2vw;
 	color:red;
 	text-align: center;
-	margin-top: 1vh;
+	margin-top: 10px;
+}
+
+header h1 {
+	position:absolute;
+	/* bottom:90vh; */
+	top:1vh;
+	left:24vw;
+	font-size: 3vw;
+	color:red;
+	text-align: center;
+	margin: -10px 0px 0px 0px;
+	padding: 5px 10px 10px 5px;
+	text-shadow:  3px 3px 2px black, 2px 2px 0.1em blue;
+}
+header h2 {
+	margin: -40px 0px;
+	color: white;
+}
+#logo {
+	/* width: 0.1vw; */
+	position:relative;
+	top:4vh;
+	left:1vw;
+}
+#logo img {
+	width:3%;
+}
+
+			/*.............блок выбора модели- начало..........*/
+#main #model {
+	/* width: 65vw; */
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+		grid-gap: 1vw;
+		text-align:center;
+		height:auto;
+		box-shadow: 10px 10px 10px 0px rgba(139, 69, 19, 0.9);
+		background: white url(../img/kozha.jpg);
+		padding:20px;
+		font-size: 1vw;
+ }
+
+ #main #model a{
+	 width:95%;
+	 font-size:calc(0.9vw + 5px);
+	 margin:0;
+	 background-image:url("../img/paper.jpg");
+	 font-weight: bold;
+	 color:black;
+	 vertical-align:middle;
+	 border-color: white black black white;
+	 border-width: 2x;
+	 border-radius: 2px;
+ }
+
+#main #model a:hover  {
+	color:white;
+	background-image:url("../img/paperred.jpg");
+}
+					/*............. блок выбора модели- конец..........*/
+					
+/*  ....................дальше пойдут стили для боковой панели НОВОГО типа ...начало.............*/
+ #side {
+	text-align: center;
+	width: 18vw;
+	height:97vh;
+	background-image: url("../img/stena.jpg");
+	background-repeat: repeat-y;
+	background-size: contain;
+	box-shadow: 10px 10px 15px 0px rgba(159, 65, 45, 0.8);
+	position: fixed;
+	top: 5px;
+	right: 1%;
+	/* margin-right: -50%; */
+	border-style:solid;
+	border-color: brown;
+	border-width: 0 0 3px 3px;
+	border-radius: 8px;
+	padding-left: 0px;
+	padding-top: 0px;
+	margin: 0.1vh 0.1vw 0.1vh 0.1vw;
+	
+
+}
+
+ #side span {
+	font-size: 1.2vw;
+	color:white;
+		 /* background-image:url("../img/paper.jpg"); */
+
+   }
+
+
+#side a {
+	display:block;
+	width:80%;
+	color: black;
+	/* font-weight: bold; */
+	font-size: calc(1vw + 3px);
+	background-image:url("../img/paper.jpg");
+	background-color: #B0E0E6;
+	text-decoration:none;
+	line-height: 3vh;
+	background-size: contain;
+	border-color: white black black white;
+	border-width: 2x;
+	border-radius: 2px;
+	padding:3px 2px;
+	margin: 3vh auto; 
+}
+#side a:hover {
+	color: white;
+	/* font-size: calc(1.3vw + 2px); */
+	border-width: 2x;
+	/* border: none; */
+	/* padding: 4px 3px; */
+	background-image:url("../img/paperred.jpg");
+	/* background-color: red; */
+	border-radius: 2px;
+
+}
+#diag {
+	color: blue;
 }
 
 
+#side #select {
+	width:70%;
+	 /* height:5%; */
+	font-size: calc(1.1vw + 2px);
+	color:red;
+	border-color: white black black white;
+	padding:5px 6px;
+	vertical-align:middle;
+	font-weight: bold;
 
-header a h1 {
-	font-size: calc(3vw + 8px);/* 2.5em */
+ }
+#side #select:hover {
+	color:white;
+	font-weight: bold;
+	
+ }
+ #side #util {
+	padding:5px 6px;
+	color:blue;
+	margin:3vh auto 5vh;
+	font-weight: bold;
+	
+ }
+#side #util:hover {
+	color:white;
+}
+
+
+#side #name {
+	 	 /* background-image:url("../img/paper.jpg"); */
+
+	 margin: 10px auto;
+	border-style:solid;
+	border-color: white black black white;
+	border-width: 2px;
+	font-size:1.2vw;
+	font-weight: bold;
+	padding:0px 0px;
+	width:90%;	
+	background-color: transparent;
+ }
+ #side #name span {
+	display:inline-block;
+	color:black;
+	width:100%;
+	font-size: calc(1.7vw + 2px);
+	text-align:center;
+	vertical-align:middle;
+	/* border-style: solid; */
+    /* border-width: 1px; */
+    /* border-color: blue; */
+	background-image:url("../img/paper.jpg");
+	opacity:0.7;
+	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+	/* padding:10px 13px; */
+ }
+/*  .................... стили для боковой панели НОВОГО типа ...конец.............*/
+ 
+
+/* кнопки НА ГЛАВНУЮ и НАЗАД .......... возможно, убрать...*/
+.back {
+	font-size:1.5em;
+}
+
+.back h1 {
+	font-size: 3vw;
 	color:red;
 	text-align: center;
-	margin: -5px 0px 10px 0px;
+	margin: 0px 0px 0px 0px;
 	padding: 10px 10px 20px 10px;
-	padding-bottom:2vh;
 	text-shadow:  3px 3px 2px black, 2px 2px 0.1em blue;
+	/* z-index:99; */
+}
+.back  h2 {
+	margin: 0px 0px;
+	font-size: 2vw;
+	color: white;
+}
+
+span {
+	font-weight: bold;
+	font-size: calc(2.2vw + 2px);
+	margin-bottom:5px;
+	/* vertical-align: middle; */
+
 }
    li {
     list-style-type: none; /* Убираем маркеры */
+	/* vertical-align: middle; */
    }
-   
-header a h2 {
-	font-size: calc(1.4vw + 3px);
-		margin: 0px 0px 5px 0px;
-	/* margin: -10px; */
-	color: black;
-}
-span {
-	font-weight: bold;
-	font-size: calc(1.7vw + 4px);
-}
 
+  section li span {
+	   font-size:2vw;
+	   line-height:0.8em;
+	   padding:4px 2px;
+   }
 
 
  a {
+	 display:inline-block;
+	 width:9vw;
+	 text-align:center;
 	/*#4f0070- темно фиолетовый цвет*/ 
 	text-decoration: none;
 	color: white;
+	border-color: white black black white;
 	border-style: solid;
-    border-width: 3px;
-    border-color: blue; 
-	/* line-height: 2.9em; */
-	line-height: 6vh;
-	font-size: calc(1.2vw + 2px);
-	/* margin: 10px 15px; */
-	margin: 1vh 1.8vw;
-	padding: 3px 3px;
-	background-color:#191970;
-	border-radius: 8px;
+    border-width: 2px;
+    /* border-color: blue;  */
+	background-image:url("../img/paperblue.jpg");
+	line-height: 2.3em;
+	font-size: calc(1.1vw + 2px);
+	margin: 0 0 0 1vw;
+	padding: 0px 0px;
+	/* background-color:#191970; */
+	border-radius: 4px;
 	/* box-shadow: 5px 5px 10px 1px rgba(0, 73, 112, 0.7); */
 	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 }
 a:hover {
-	/* font-size: 1.3em; */
-	border-width: 2px;
-	background-color:red;
+	/* background-color:red; */
+	background-image:url("../img/paperred.jpg");
     border-color: #191970; 
-	border-radius: 8px;
+	border-radius: 4px;
+	/* font-weight: bold; */
 	cursor: pointer;
 }
 a img {
@@ -162,117 +343,122 @@ a img {
 	height: 9%;
 }
 
-
-aside {
-	text-align: center;
-	width: 22vw;
-	height:97.5vh;
-	background-image: url("../img/stena.jpg");
-	background-repeat: repeat-y;
-	background-size: contain;
-	/* box-shadow: 5px 2px 13px 11px rgba(34, 60, 80, 0.71) inset; */
-	box-shadow: -10px 10px 15px 0px rgba(159, 65, 45, 0.8);
-	position: fixed;
-	top: 5px;
-	right: 1%;
-	margin-right: -49%;
-	border-style:solid;
-	border-color: brown;
-	border-width: 0 0 3px 3px;
-	border-radius: 8px;
-	padding-left: 10px;
-	padding-top: 0px;
-	margin: 0.1vw 0.1vw 4vw 0.1vw;
-	
-
-}
-aside ul  {
-	margin-top: 20px;
-	margin-right:10px;
-    padding-inline-start: 1px;
-}
-aside ul span {
-	color: white;
+/*.............панель для якобы рекламы....начало...........*/
+#ads {
+	width:95%;
+	margin-top:5px;
+	border-style: solid;
+    border-width: 2px;
+	border-color: white black black white;
+	box-shadow:  2px 2px 2px black, 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+	text-align:center;
+	background-image:url("../img/paper.jpg");	
 }
 
-aside li {
-	    
-    list-style-type: none; /* Убираем маркеры */
-	margin: 5px 5px;
-   }
- aside li span {
-	font-size: 2vw;
-   }
-
-
-aside a {
-	color: black;
-	font-weight: bold;
-	font-size: calc(1.3vw + 3px);
-	background-image:url("../img/paper.jpg");
-	background-color: #B0E0E6;
-	/* line-height: 3rem; */
-	line-height: 7vh;
-	border-color: white;
-	background-size: contain;
-	border-width: 2x;
-	border-radius: 2px;
-	padding:2px 2px;
-	margin: 10px 0px; 
+#ads #adstitle P {
+		font-size: calc(2vw + 1px);
+	border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+	margin: 5px;
 }
-aside a:hover {
-	color: white;
-	font-size: calc(1.3vw + 2px);
-	border-width: 3x;
-	/* border: none; */
-	padding: 4px 3px;
-	background-image: none;
-	background-color: red;
-	border-radius: 0px;
-
+#ads p {
+	font-size: calc(1.5vw + 1px);
+	border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+	margin: 5px;
 }
-#diag {
-	color: blue;
+#ads img{
+	width:13vw;
+	margin:1vh auto;
+	border-style: solid;
+    border-width: 2px;
+	border-color: white black black white;
+	box-shadow:  2px 2px 2px black, 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 }
 
-#main section {
-	/* margin: 1vw 1vw 4vw 1.5vw; */
-	margin: 1vh 0vw 4vh 0.7vw;
-	padding-top: 17px;
-	padding-left: 20px;
-	padding-bottom: 30px;
+/* #ads img:hover { */
+	/* width:60vw; */
+	/* position:fixed; */
+	/* top:10px; */
+	/* left:10px; */
+	/* z-index:100; */
+/* } */
+/*.............панель для якобы рекламы....конец...........*/
+
+
+
+/* ....................... блоки с моделью (объемы и коды двигателей)..начало............ */
+#main section {	
+	position: relative;
+	left: 0;
+	/* width: 67%; */
+	max-width: 1900px;
+	height: auto;
+	/* margin: 25px 50px 50px 30px; */
+	margin: 2vh 0.1vw 5vh 0.1vw;
+	padding:20px;
 	background: white url(../img/tkan.jpg);		
 	box-shadow: 10px 10px 10px 0px rgba(160, 82, 45, 0.8);
 	border-width: 1px;
 	border-radius: 8px;
-	/* height: calc(auto + 100px); */
-
 }
-/* #start { */
-	/* display: block; */
-	/* margin-top: 40vh; */
-	/* color: red; */
-	/* color: transparent; */
-/* } */
 
-#end {
-	display: block;
-	margin-top: 40vh;
-	color: transparent;
+#main section span {
+	display:inline-block;
+	width:7vw;
+	/* height:4vh; */
+	font-size: calc(1.7vw + 2px);
+	text-align:center;
+	vertical-align:middle;
+	border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+	background-image:url("../img/paper.jpg");
+	opacity:0.7;
+	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+	margin-bottom:3px;
 }
+
+ #main section .desc {
+	font-size: calc(1.3vw + 2px);
+	width:12.5vw;
+   	color:blue;
+	line-height: 0.9em;
+	padding:3px 3px 6px 3px;
+ }
+ 
+ #main section a {
+	 line-height: 1.2em;
+	 padding:4px;
+	 /* margin-top:15px; */
+ }
+ 
+  #end {
+	 display:block;
+	 margin-top:70vh;
+	 color:transparent;
+ }
+ /* ....................... блоки с моделью (объемы и коды двигателей)..конец............ */
+
+
+
+		/*.............. стрелки ВВЕРХ.начало.......... */
+
 
 #up {
 	color: transparent;
 	display: block;
-	bottom: 10vh;
-	right: 23vw;
+	bottom: 5px;
+	right: 17vw;
 	border-style: dashed;
     border-width: 2px;
     border-color: transparent;
-    width: calc(2.5vw + 5px);
-    height: 5vh;
+    width: 3vw;
+    height: 6vh;
 	position: fixed;
-    background:url(../img/up1.png) no-repeat;
+    background:url(../img/up1.png);
 	opacity: 0.5;
 	background-size: contain;
 	z-index: 5;
@@ -292,15 +478,16 @@ aside a:hover {
 #up1 {
 	color: transparent;
 	display: block;
-	bottom: 70vh;
-	right: calc(95vw - 30px);
+	bottom: 70%;
+	/* right: 95.5%; */
+	left:0.01vw;
 	border-style: dashed;
     border-width: 2px;
     border-color: transparent;
-    width: calc(2.5vw + 5px);
-    height: 5vh;
+    width: 3vw;
+    height: 6vh;
 	position: fixed;
-    background:url(../img/up1.png) no-repeat;
+    background:url(../img/up1.png);
 	opacity: 0.5;
 	background-size: contain;
 	z-index: 5;
@@ -316,37 +503,26 @@ aside a:hover {
 #up1:hover {
 	border: none;
 }
+		/*.............. стрелки ВВЕРХ...конец.......... */
+
 
 
 hr {
-	margin: 3px 0px;
-	height: 2px;
-}
-#model {
-		box-shadow: 10px 10px 10px 0px rgba(139, 69, 19, 0.9);
-		background: white url(../img/kozha.jpg);
-		margin: 0.5vw 1vw 1vw 1.5vw;
-		border-width: 1px;
-		border-radius: 8px;
-		height: auto;
- } 
-#model a {
-	font-size: calc(1.5vw + 2px);
-	background-color: #006400;/*dark-green*/
-}
-#model a:hover  {
-	background-color: red;
-	/* font-size: 2.5em; */
+	margin: 5px 10px 5px 0px;
+	height:3px;
+	background-color:white;
+	opacity:0.6;
+	z-index:-99;
 }
 
+
+/*.................buttons...возможно, убрать...................*/
  .buttons {
 	color: blue;
-	position: fixed;
-	top:30px;
-	margin-left: 1vw;
-	/* font-size: 220%; */
-	font-size: calc(1.3vw + 2px);
-	/* margin: -54px 0px 0px 45px; */
+	position: absolute;
+	/* font-size: 100%; */
+	font-size: calc(1vw + 1px);
+	margin: -54px 0px 0px 45px;
 	padding-top: 0px;
 	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
  }
@@ -355,9 +531,7 @@ hr {
  }
  
   .buttonsas {
-	/* position: absolute; */
 	color: blue;
-	/* font-size: 100%; */
 	font-size: calc(1vw + 1px);
 	margin: 0px 0px 20px 14px;
 	padding-top: 0px;
@@ -368,22 +542,198 @@ hr {
 	 background-color: #f794947b;
 	 color: white;
  }
- .ins mark {
-	 background-color: #00BFFF;
+ 
+ /*..................................стиль надписи автомобили -2008 года ......................................*/
+#main section .ins {
+	font-size: calc(1.5vw + 2px);
+	width:25vw;
+   	color:blue;
+	line-height: 0.9em;
+	padding:3px;
+	color:red;
  }
 
- span mark {
-	 font-size: calc(1.4vw + 2px); 
- }
  
-  #select {
-	 font-size: calc(1.5vw + 2px);
-	 color:red;
-	 border-color:blue;
-	 padding:8px;
- }
- #select:hover {
-	 color:white;
-	 font-weight: bold;
-	 
- }
+ 	 /* .............для того, чтобы только последний блок был виден при прокрутке вниз........ */
+ /* #main #calibra { */
+	 /* margin-bottom:50vh; */
+ /* } */
+
+ /*.................................. качающиеся плитки1 ..начало....................................*/
+@-webkit-keyframes swing {
+20% {
+-webkit-transform: rotate3d(0, 0, 1, 4deg);
+transform: rotate3d(0, 0, 1, 4deg);
+}
+ 
+40% {
+-webkit-transform: rotate3d(0, 0, 1, -3deg);
+transform: rotate3d(0, 0, 1, -3deg);
+}
+ 
+60% {
+-webkit-transform: rotate3d(0, 0, 1, 2deg);
+transform: rotate3d(0, 0, 1, 2deg);
+}
+ 
+80% {
+-webkit-transform: rotate3d(0, 0, 1, -1deg);
+transform: rotate3d(0, 0, 1, -1deg);
+}
+ 
+100% {
+-webkit-transform: rotate3d(0, 0, 1, 0deg);
+transform: rotate3d(0, 0, 1, 0deg);
+}
+}
+ 
+@keyframes swing {
+20% {
+-webkit-transform: rotate3d(0, 0, 1, 4deg);
+-ms-transform: rotate3d(0, 0, 1, 4deg);
+transform: rotate3d(0, 0, 1, 4deg);
+}
+ 
+40% {
+-webkit-transform: rotate3d(0, 0, 1, -3deg);
+-ms-transform: rotate3d(0, 0, 1, -3deg);
+transform: rotate3d(0, 0, 1, -3deg);
+}
+ 
+60% {
+-webkit-transform: rotate3d(0, 0, 1, 2deg);
+-ms-transform: rotate3d(0, 0, 1, 2deg);
+transform: rotate3d(0, 0, 1, 2deg);
+}
+ 
+80% {
+-webkit-transform: rotate3d(0, 0, 1, -1deg);
+-ms-transform: rotate3d(0, 0, 1, -1deg);
+transform: rotate3d(0, 0, 1, -1deg);
+}
+ 
+100% {
+-webkit-transform: rotate3d(0, 0, 1, 0deg);
+-ms-transform: rotate3d(0, 0, 1, 0deg);
+transform: rotate3d(0, 0, 1, 0deg);
+}
+}
+  /*.................................. качающиеся плитки1 ..конец....................................*/
+  
+  
+  /*.................................. качающиеся плитки2 ..начало....................................*/
+@-webkit-keyframes swing1 {
+20% {
+-webkit-transform: rotate3d(0, 0, 1, 2deg);
+transform: rotate3d(0, 0, 1, 2deg);
+}
+ 
+40% {
+-webkit-transform: rotate3d(0, 0, 1, -2deg);
+transform: rotate3d(0, 0, 1, -2deg);
+}
+ 
+60% {
+-webkit-transform: rotate3d(0, 0, 1, 1deg);
+transform: rotate3d(0, 0, 1, 1deg);
+}
+ 
+80% {
+-webkit-transform: rotate3d(0, 0, 1, 0deg);
+transform: rotate3d(0, 0, 1, 0deg);
+}
+ 
+100% {
+-webkit-transform: rotate3d(0, 0, 1, 0deg);
+transform: rotate3d(0, 0, 1, 0deg);
+}
+}
+ 
+@keyframes swing {
+20% {
+-webkit-transform: rotate3d(0, 0, 1, 2deg);
+-ms-transform: rotate3d(0, 0, 1, 2deg);
+transform: rotate3d(0, 0, 1, 2deg);
+}
+ 
+40% {
+-webkit-transform: rotate3d(0, 0, 1, -2deg);
+-ms-transform: rotate3d(0, 0, 1, -2deg);
+transform: rotate3d(0, 0, 1, -2deg);
+}
+ 
+60% {
+-webkit-transform: rotate3d(0, 0, 1, 1deg);
+-ms-transform: rotate3d(0, 0, 1, 1deg);
+transform: rotate3d(0, 0, 1, 1deg);
+}
+ 
+80% {
+-webkit-transform: rotate3d(0, 0, 1, 0deg);
+-ms-transform: rotate3d(0, 0, 1, 0deg);
+transform: rotate3d(0, 0, 1, 0deg);
+}
+ 
+100% {
+-webkit-transform: rotate3d(0, 0, 1, 0deg);
+-ms-transform: rotate3d(0, 0, 1, 0deg);
+transform: rotate3d(0, 0, 1, 0deg);
+}
+}
+  /*.................................. качающиеся плитки2 ..конец....................................*/ 
+  
+ /*......................подключение качающихся плиток на главной странице......................................*/
+.mod:hover {
+-webkit-animation-duration: 1s;
+animation-duration: 1s;
+-webkit-animation-fill-mode: both;
+animation-fill-mode: both;
+-webkit-transform-origin: center center;
+-ms-transform-origin: center center;
+transform-origin: center center;
+-webkit-animation-name: swing;
+animation-name: swing;
+}
+
+ /*......................подключение качающихся плиток на странице моделей........... #main section a:hover ,...........................*/
+#model a:hover{
+-webkit-animation-duration: 1s;
+animation-duration: 1s;
+-webkit-animation-fill-mode: both;
+animation-fill-mode: both;
+-webkit-transform-origin: center center;
+-ms-transform-origin: center center;
+transform-origin: center center;
+-webkit-animation-name: swing1;
+animation-name: swing1;
+}
+
+
+ 
+ /* ....................tooltip...................*/
+ 
+    [data-tooltip] {
+    position: relative; /* Относительное позиционирование */ 
+   }
+   [data-tooltip]::after {
+    content: attr(data-tooltip); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    width: 300px; /* Ширина подсказки */
+    left: 0; top: 0; /* Положение подсказки */
+    background: #3989c9;
+    color: #fff;
+	/* background: white; */
+	/* color:black; */
+    padding: 0.5em; /* Поля вокруг текста */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+    pointer-events: none; /* Подсказка */
+    opacity: 0; /* Подсказка невидима */
+    transition: 1s; /* Время появления подсказки */
+   } 
+   [data-tooltip]:hover::after {
+    opacity: 1; /* Показываем подсказку */
+    top: 2em; /* Положение подсказки */
+	z-index:999;
+   }
+
+
