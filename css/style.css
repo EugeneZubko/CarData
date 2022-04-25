@@ -118,7 +118,7 @@ footer li {
   /* Иконки (плитки) выбора марки */
  img {
 	margin:2px;
-	width:8vw;
+	width:calc(8.5vw + 2px);
 	border-style: solid;
 	border-width: 0.4vw;
 	border-color: #241970;
