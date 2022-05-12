@@ -60,10 +60,8 @@ header span {
 
 /* блок с плитками марок автомобилей*/
 section {
-
 	box-shadow: 5px 2px 13px 11px rgba(34, 60, 80, 0.71) inset;
-	/* margin: 15px 50px 20px 45px; */
-	margin: 2vh 3vw 1vh 4vw;
+	/* margin: 2vh 3vw 1vh 4vw; */
 	padding-top: 3vh;/*10px*/
 	padding-left: 2vw;/*35px*/
 	padding-right:2vw;/*5px*/
@@ -71,11 +69,26 @@ section {
 	background-color:#c4c2c2;
 	background-image: url("../img/brick1.jpg");
 	height: auto;
-	/* width: 92%; */
 	width: 85vw;
 	max-width: 1900px;
+	
+		margin: auto;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(9.5vw, 1fr));
+		grid-gap: 0.1vw;
+		justify-items:center;
+		text-align:center;
 }
-
+  /* Иконки (плитки) выбора марки */
+ img {
+	margin:2px;
+	width:calc(8.2vw + 2px);
+	border-style: solid;
+	border-width: 0.3vw;
+	/* border-color: #241970; */
+	border-color: gray black black gray;
+	box-shadow:  2px 2px 2px black, 8px 8px 6px 1px rgba(50, 50, 50, 0.75);
+}
 
 
 footer {
@@ -104,6 +117,10 @@ footer a {
 	border-width: 2px;
 	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 
+}
+
+footer a:hover {
+	color: red;	
 }
 footer li {
 	    
