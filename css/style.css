@@ -89,18 +89,20 @@ footer {
 footer a {
 	display:inline-block;
 	text-decoration: none;
-	color: black;
+	color: green;
 	font-weight: bold;
 	font-size: calc(1.4vw + 2px);
 	background-image:url("../img/paper.jpg");
 	background-color: #B0E0E6;
 	line-height: 3vh;
-	border-color: white;
 	background-size: contain;
-	border-width: 2x;
+	border-style: solid;
 	border-radius: 2px;
-	padding:4px 2px;
-	margin: 1vh 1vw 3vh 1vw; 
+	padding:4px 4px;
+	margin: 1vh 1vw 3vh 1vw;
+	border-color: white black black white;
+	border-width: 2px;
+	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 
 }
 footer li {
@@ -187,6 +189,7 @@ transform: rotate3d(0, 0, 1, 0deg);
 
 .swing:hover {
 	border-color: red;
+	opacity:0.6;
 	-webkit-animation-duration: 1s;
 	animation-duration: 1s;
 	-webkit-animation-fill-mode: both;
