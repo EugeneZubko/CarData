@@ -94,7 +94,11 @@ section {
 footer {
 	height:95%;
 	color:white;
-	background-color: black;
+	background-image:url("../img/concr2.jpg");
+	border-style: solid;
+	border-color: white black black white;
+	border-width: 3px;
+	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);	 
 	margin-top: 1vh;
 	margin-bottom:1vh;
 	
